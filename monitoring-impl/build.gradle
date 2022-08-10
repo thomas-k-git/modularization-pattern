@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 group 'org.example'
@@ -13,9 +13,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
-    implementation project("feature-flags-impl")
-    implementation project("monitoring-impl")
-    implementation project("persistence-impl")
+    implementation project(":feature-flags-api")
 }
 
 test {

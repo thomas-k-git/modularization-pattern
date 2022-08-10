@@ -1,2 +1,6 @@
 rootProject.name = 'modularization-pattern'
+include 'feature-flags-api'
+include 'feature-flags-impl'
+include 'monitoring-impl'
+include 'persistence-impl'
 
